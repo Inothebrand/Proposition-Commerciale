@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposition Commerciale — L'Instant Glow × Inès Ouajib</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cherry: #8B0435;
+    --cherry-dark: #6E0329;
+    --cherry-light: rgba(139,4,53,0.07);
+    --cherry-mid: rgba(139,4,53,0.15);
+    --ink: #111111;
+    --ink-soft: #333333;
+    --bg: #FAFAF8;
+    --white: #FFFFFF;
+    --border: #E5E0DA;
+    --muted: #7A746E;
+    --muted-light: #B0A9A2;
+    --gold: #C4963C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Mulish', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* ─── COVER PAGE ─── */
+  .cover {
+    min-height: 100vh;
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  .cover-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .cover-accent-top {
+    height: 4px;
+    background: var(--cherry);
+    width: 100%;
+  }
+
+  .cover-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .logo-mark {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-name {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  .logo-name strong {
+    display: block;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+  }
+
+  .cover-center {
+    text-align: left;
+    max-width: 680px;
+  }
+
+  .cover-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .cover-eyebrow::after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: var(--cherry);
+  }
+
+  .cover-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.0;
+    margin-bottom: 0.5rem;
+  }
+  .cover-title em {
+    font-style: italic;
+    color: rgba(255,255,255,0.5);
+  }
+  .cover-title strong {
+    font-weight: 600;
+    display: block;
+    color: var(--white);
+  }
+
+  .cover-client {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .cover-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .cover-meta-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+  }
+  .cover-meta-value {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+  }
+
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cover-bottom-note {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.25);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .cover-badge {
+    background: var(--cherry);
+    color: white;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+  }
+
+  /* ─── DOCUMENT BODY ─── */
+  .doc-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 4rem 3rem 6rem;
+  }
+
+  /* ─── SECTION DIVIDER ─── */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3.5rem 0 2rem;
+  }
+  .section-divider:first-child { margin-top: 0; }
+
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--cherry-mid);
+    line-height: 1;
+    flex-shrink: 0;
+    letter-spacing: -0.03em;
+  }
+
+  .section-meta { flex: 1; }
+
+  .section-tag {
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .card-header {
+    background: var(--cherry);
+    padding: 0.7rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .card-header-title {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+  }
+
+  .card-body {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .card-body p {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* ─── TWO-COL GRID ─── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ─── HIGHLIGHT BOX ─── */
+  .highlight {
+    background: var(--cherry-light);
+    border-left: 3px solid var(--cherry);
+    border-radius: 0 10px 10px 0;
+    padding: 1rem 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .highlight p {
+    font-size: 0.85rem;
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+  .highlight strong { color: var(--cherry); font-weight: 600; }
+
+  /* ─── LIST ─── */
+  .styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .styled-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .styled-list li:last-child { border-bottom: none; }
+  .styled-list li::before {
+    content: '→';
+    color: var(--cherry);
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    font-weight: 600;
+  }
+
+  /* ─── TIMELINE ─── */
+  .timeline {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--border);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.6rem;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--cherry);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 1px var(--cherry);
+  }
+  .timeline-date {
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .timeline-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .timeline-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  /* ─── PRICING TABLE ─── */
+  .pricing-card {
+    background: var(--ink);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .pricing-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pricing-tag {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .pricing-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+  }
+  .pricing-sub {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+    font-weight: 300;
+  }
+  .pricing-amount {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pricing-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+  }
+  .pricing-currency {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+  }
+  .pricing-period {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    margin-left: 0.3rem;
+  }
+  .pricing-includes {
+    padding: 1.5rem 2rem 2rem;
+  }
+  .pricing-includes-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  .pricing-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .pricing-item::before {
+    content: '✓';
+    color: var(--cherry);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    margin-top: 0.15rem;
+  }
+
+  .pricing-note {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 2rem 0;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .pricing-footer {
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-badge {
+    background: var(--cherry);
+    color: white;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+  }
+  .pricing-badge.outline {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* ─── COMPTE RENDU ─── */
+  .cr-section {
+    page-break-before: always;
+    border-top: 4px solid var(--cherry);
+    padding-top: 3rem;
+  }
+
+  .cr-title-area {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .cr-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .cr-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+  }
+  .cr-subtitle {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .cr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .cr-grid-item {
+    background: var(--white);
+    padding: 1rem 1.2rem;
+  }
+  .cr-grid-label {
+    font-size: 0.57rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .cr-grid-value {
+    font-size: 0.85rem;
+    color: var(--ink);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  /* ─── SEPARATOR ─── */
+  .sep {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 1.5rem;
+  }
+  .sep-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted-light);
+    flex-shrink: 0;
+  }
+  .sep-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* ─── KPI ROW ─── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .kpi-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem;
+    text-align: center;
+  }
+  .kpi-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--cherry);
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+  .kpi-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  /* ─── MAIL TEMPLATE ─── */
+  .mail-template {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    page-break-before: always;
+  }
+  .mail-header {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+  }
+  .mail-field {
+    display: flex;
+    gap: 0.8rem;
+    align-items: baseline;
+    padding: 0.3rem 0;
+  }
+  .mail-field-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted-light);
+    font-weight: 600;
+    min-width: 50px;
+  }
+  .mail-field-value {
+    font-size: 0.82rem;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .mail-body {
+    padding: 1.5rem 1.8rem;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .mail-body p { margin-bottom: 1rem; }
+  .mail-body p:last-child { margin-bottom: 0; }
+  .mail-sign {
+    border-top: 1px solid var(--border);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 0.78rem;
+    color: var(--cherry);
+    font-weight: 500;
+  }
+
+  /* ─── FOOTER ─── */
+  .doc-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .doc-footer-brand {
+    font-size: 0.68rem;
+    color: var(--muted-light);
+    font-weight: 300;
+    letter-spacing: 0.06em;
+  }
+  .doc-footer-brand strong {
+    color: var(--cherry);
+    font-weight: 600;
+  }
+  .doc-footer-page {
+    font-size: 0.65rem;
+    color: var(--muted-light);
+    font-weight: 300;
+  }
+
+  /* ─── PRINT ─── */
+  @media print {
+    body { background: white; }
+    .cover { min-height: 100vh; page-break-after: always; }
+    .card, .highlight, .kpi-box { break-inside: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .cover-inner { padding: 2.5rem 2rem; }
+    .doc-wrap { padding: 2rem 1.5rem 4rem; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .kpi-row { grid-template-columns: 1fr; }
+    .cr-grid { grid-template-columns: 1fr; }
+    .cover-title { font-size: 2.8rem; }
+    .pricing-num { font-size: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ COVER ══════════════ -->
+<div class="cover">
+  <div class="cover-noise"></div>
+  <div class="cover-accent-top"></div>
+  <div class="cover-inner">
+
+    <div class="cover-logo">
+      <!-- Replicating the "io" monogram from the brand -->
+      <svg class="logo-mark" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="112" font-family="Georgia, serif" font-size="118" font-weight="bold" fill="#8B0435" letter-spacing="-6">io</text>
+      </svg>
+      <div class="logo-name">
+        <strong>Inès Ouajib</strong>
+        Community Management
+      </div>
+    </div>
+
+    <div class="cover-center">
+      <div class="cover-eyebrow">Proposition Commerciale</div>
+      <div class="cover-title">
+        <em>Refonte Instagram</em>
+        <strong>L'Instant Glow</strong>
+      </div>
+      <div class="cover-client">
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Client</span>
+          <span class="cover-meta-value">L'Instant Glow — Sihem</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Secteur</span>
+          <span class="cover-meta-value">Salon d'esthétique</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Date de l'appel</span>
+          <span class="cover-meta-value">18 mai 2026</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Préparée par</span>
+          <span class="cover-meta-value">Inès Ouajib</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <span class="cover-bottom-note">Document confidentiel · À usage exclusif de L'Instant Glow</span>
+      <span class="cover-badge">Confidentiel · Mai 2026</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════ DOCUMENT ══════════════ -->
+<div class="doc-wrap">
+
+  <!-- ─── COMPTE RENDU ─── -->
+  <div class="cr-section">
+    <div class="cr-title-area">
+      <div class="cr-eyebrow">Mémo interne · Compte rendu d'appel</div>
+      <div class="cr-title">Brief Client —<br>L'Instant Glow</div>
+      <div class="cr-subtitle">Appel de découverte — 18 mai 2026 à 17h · Inès Ouajib + Sihem (gérante)</div>
+    </div>
+
+    <div class="cr-grid">
+      <div class="cr-grid-item">
+        <div class="cr-grid-label">Client</div>
+        <div class="cr-grid-value">L'Instant Glow<br>Salon d'esthétique</div>
+      </div>
+      <div class="cr-grid-item">
+        <div class="cr-grid-label">Contact</div>
+        <div class="cr-grid-value">Sihem<br>Gérante & propriétaire</div>
+      </div>
+      <div class="cr-grid-item">
+        <div class="cr-grid-label">Instagram</div>
+        <div class="cr-grid-value">@linstantglow<br>799 abonnés · 321 suivis</div>
+      </div>
+    </div>
+
+    <!-- État actuel -->
+    <div class="section-divider" style="margin-top:0">
+      <div class="section-num" style="font-size:3rem;color:rgba(139,4,53,0.1)">01</div>
+      <div class="section-meta">
+        <div class="section-tag">Diagnostic</div>
+        <div class="section-title" style="font-size:1.4rem">État actuel du compte</div>
+      </div>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-box">
+        <div class="kpi-num">799</div>
+        <div class="kpi-label">Abonnés Instagram<br>au 18 mai 2026</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">24</div>
+        <div class="kpi-label">Posts depuis le<br>26 octobre 2025</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">∅</div>
+        <div class="kpi-label">Captions et hashtags<br>sur les posts</div>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <p><strong>Points forts :</strong> Le compte est actif avec des stories quotidiennes — la gérante est dans une dynamique de publication régulière. Une charte graphique existe déjà. Des photos et vidéos professionnelles sont disponibles, et un shooting est prévu.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:1rem">
+      <div class="card-header"><span class="card-header-title">🔍 Points de friction identifiés</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Publications sans caption ni hashtags : visibilité organique nulle, aucune accroche pour l'audience</li>
+          <li>Contenu répétitif : photos prises sous le même angle, pas de diversité de formats</li>
+          <li>Absence de ligne éditoriale : les posts semblent publiés "au compte-gouttes" sans stratégie</li>
+          <li>Profil non optimisé : bio, lien, highlights non travaillés</li>
+          <li>Potentiel inexploité : 799 abonnés avec des stories actives = une communauté existante à engager</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Infos clés -->
+    <div class="section-divider">
+      <div class="section-num" style="font-size:3rem;color:rgba(139,4,53,0.1)">02</div>
+      <div class="section-meta">
+        <div class="section-tag">Brief</div>
+        <div class="section-title" style="font-size:1.4rem">Informations clés recueillies</div>
+      </div>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header"><span class="card-header-title">🎯 La marque</span></div>
+        <div class="card-body">
+          <ul class="styled-list">
+            <li>Positionnement : <strong>expertise, qualité, professionnalisme — premium mais accessible</strong></li>
+            <li>Secteur : salon d'esthétique, services beauté</li>
+            <li>Présence : Instagram, TikTok, Facebook (focus appel = Instagram)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-header-title">👥 Audience cible</span></div>
+        <div class="card-body">
+          <ul class="styled-list">
+            <li>Profil : féminin, varié</li>
+            <li>Zones : Pays de Gex, Suisse romande, Haute-Savoie</li>
+            <li>Clientèle locale et transfrontalière</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header"><span class="card-header-title">🎨 Communication</span></div>
+        <div class="card-body">
+          <ul class="styled-list">
+            <li>Ton : expert, informatif, proche</li>
+            <li>Charte graphique existante</li>
+            <li>Ressources : photos et vidéos pro dispo + shooting prévu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="card-header-title">✅ Workflow validé</span></div>
+        <div class="card-body">
+          <ul class="styled-list">
+            <li>Validation du post + caption + hashtags par Sihem</li>
+            <li>Délai : 2 jours avant publication</li>
+            <li>Démarrage souhaité : cette semaine (confirmation en attente)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Objectifs -->
+    <div class="sep"><div class="sep-line"></div><span class="sep-label">Objectifs définis</span><div class="sep-line"></div></div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">📈 Objectifs Instagram de Sihem</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Gagner en visibilité et notoriété locale</li>
+          <li>Développer la communauté Instagram</li>
+          <li>Générer des ventes et réservations via les réseaux</li>
+          <li>Fidéliser les clientes actuelles</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Organisation -->
+    <div class="sep"><div class="sep-line"></div><span class="sep-label">Organisation de la collaboration</span><div class="sep-line"></div></div>
+    <div class="highlight">
+      <p><strong>Mission définie :</strong> Instagram uniquement — refonte du compte + gestion pendant 2 semaines + formation pour que Sihem reprenne en autonomie à partir du 1er juin. Inès reste disponible si Sihem souhaite prolonger ou étendre à d'autres réseaux.</p>
+    </div>
+
+  </div><!-- end cr-section -->
+
+
+  <!-- ═══════════════════════════════════════
+       PROPOSITION COMMERCIALE
+  ════════════════════════════════════════ -->
+
+  <!-- Section break visuelle -->
+  <div style="margin: 4rem 0 3rem; text-align:center; position:relative;">
+    <div style="height:1px; background: var(--border); position:absolute; top:50%; left:0; right:0;"></div>
+    <span style="position:relative; background: var(--bg); padding: 0 1.5rem; font-size:0.62rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--cherry); font-weight:600;">Proposition Commerciale</span>
+  </div>
+
+  <!-- 1. CONTEXTE -->
+  <div class="section-divider">
+    <div class="section-num">01</div>
+    <div class="section-meta">
+      <div class="section-tag">Contexte</div>
+      <div class="section-title">Ce que j'ai compris de votre situation</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <p>L'Instant Glow est un salon d'esthétique positionné sur un segment <strong>premium accessible</strong>, rayonnant sur le Pays de Gex, la Suisse romande et la Haute-Savoie. La marque dispose d'un vrai potentiel de visibilité en ligne : une clientèle féminine fidèle, une charte graphique existante, du contenu visuel professionnel disponible, et une gérante déjà active quotidiennement sur les stories.</p>
+      <br>
+      <p>Pourtant, le compte Instagram (@linstantglow, 799 abonnés) ne reflète pas encore l'image soignée du salon. Les publications manquent de structure : pas de captions, pas de hashtags, angles répétitifs. Le potentiel est là — il manque la stratégie et l'exécution éditoriale pour le révéler.</p>
+    </div>
+  </div>
+
+  <!-- 2. PROBLÈME -->
+  <div class="section-divider">
+    <div class="section-num">02</div>
+    <div class="section-meta">
+      <div class="section-tag">Problème</div>
+      <div class="section-title">Ce qui freine votre croissance aujourd'hui</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">❌ Absence de stratégie éditoriale</span></div>
+      <div class="card-body">
+        <p>Sans ligne directrice, les publications ne racontent pas une histoire cohérente. L'audience passe sans s'attacher. Les nouvelles clientes ne savent pas ce qui les différencie des autres salons.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">❌ Visibilité organique nulle</span></div>
+      <div class="card-body">
+        <p>L'absence de hashtags et de captions optimisées empêche l'algorithme Instagram de distribuer les posts au-delà des abonnés existants. Chaque post reste invisible pour les nouvelles audiences.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>En résumé :</strong> le salon travaille dur et propose des prestations de qualité — mais Instagram ne le montre pas. Le compte actuel sous-représente la valeur réelle de L'Instant Glow et génère peu de nouveaux rendez-vous en ligne.</p>
+  </div>
+
+  <!-- 3. OBJECTIF -->
+  <div class="section-divider">
+    <div class="section-num">03</div>
+    <div class="section-meta">
+      <div class="section-tag">Objectif</div>
+      <div class="section-title">Où vous souhaitez arriver</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ul class="styled-list">
+        <li>Un compte Instagram qui reflète fidèlement l'image premium et chaleureuse du salon</li>
+        <li>Une ligne éditoriale claire qui attire et convertit de nouvelles clientes localement</li>
+        <li>Des posts qui génèrent de l'engagement : commentaires, sauvegardes, partages</li>
+        <li>Une communauté qui se développe organiquement dans la zone Pays de Gex / Suisse romande</li>
+        <li>Sihem autonome dans la gestion du compte à partir du 1er juin</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. SOLUTION -->
+  <div class="section-divider">
+    <div class="section-num">04</div>
+    <div class="section-meta">
+      <div class="section-tag">Solution</div>
+      <div class="section-title">Mon approche pour y arriver</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">🔧 Phase 1 — Refonte & fondations</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Audit complet du compte existant</li>
+          <li>Refonte de la bio et des éléments de profil</li>
+          <li>Création des templates visuels alignés sur la charte</li>
+          <li>Définition de la ligne éditoriale et du calendrier de contenu</li>
+          <li>Stratégie hashtags ciblée (local + secteur)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">📱 Phase 2 — Gestion & création de contenu</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Rédaction des captions engageantes</li>
+          <li>Planification et publication des posts</li>
+          <li>Adaptation des visuels disponibles (photos pro + shooting)</li>
+          <li>Validation par Sihem 2 jours avant chaque publication</li>
+          <li>Suivi des performances et ajustements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="card-header-title">🎓 Phase 3 — Formation & passation</span></div>
+    <div class="card-body">
+      <p>À l'approche du 1er juin, je forme Sihem sur les fondamentaux : utilisation des templates, rédaction de captions, sélection des hashtags, lecture des statistiques. Elle reprend le compte avec les outils, les méthodes et la confiance pour le gérer en autonomie. Je reste disponible pour des questions ponctuelles ou une éventuelle extension de la collaboration.</p>
+    </div>
+  </div>
+
+  <!-- 5. LIVRABLES -->
+  <div class="section-divider">
+    <div class="section-num">05</div>
+    <div class="section-meta">
+      <div class="section-tag">Livrables</div>
+      <div class="section-title">Ce que vous recevez concrètement</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <ul class="styled-list">
+        <li>Audit écrit du compte Instagram + recommandations</li>
+        <li>Bio, description de profil et highlights optimisés</li>
+        <li>Kit de templates visuels réutilisables (Canva ou format équivalent) en accord avec la charte graphique</li>
+        <li>Ligne éditoriale rédigée : pilliers de contenu, ton, univers éditorial</li>
+        <li>Calendrier éditorial sur 2 semaines (planning de publication détaillé)</li>
+        <li>8 à 10 posts créés, rédigés et validés avec Sihem</li>
+        <li>Stratégie hashtags personnalisée (sets par thématique)</li>
+        <li>Session de formation (1h–1h30) : prise en main des outils, méthode de publication, lecture des stats</li>
+        <li>Document récapitulatif de la formation (guide pratique pour Sihem)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6. ORGANISATION -->
+  <div class="section-divider">
+    <div class="section-num">06</div>
+    <div class="section-meta">
+      <div class="section-tag">Organisation</div>
+      <div class="section-title">Comment on travaille ensemble</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Semaine 1 — Dès validation</div>
+      <div class="timeline-title">Audit, refonte du profil & fondations éditoriales</div>
+      <div class="timeline-desc">Analyse du compte existant · Refonte bio + profil · Création des templates visuels · Définition de la ligne éditoriale · Présentation du plan à Sihem</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Semaines 1–2</div>
+      <div class="timeline-title">Création de contenu & publication</div>
+      <div class="timeline-desc">Rédaction des captions · Sélection et adaptation des visuels · Validation par Sihem J-2 · Publication et suivi de l'engagement</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Fin de semaine 2 — avant le 1er juin</div>
+      <div class="timeline-title">Formation & passation</div>
+      <div class="timeline-desc">Session formation complète · Remise du guide pratique · Réponses aux questions · Passation en autonomie totale</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">À partir du 1er juin</div>
+      <div class="timeline-title">Sihem reprend en autonomie</div>
+      <div class="timeline-desc">Inès reste disponible si Sihem souhaite prolonger la collaboration ou l'étendre à d'autres réseaux (TikTok, Facebook)</div>
+    </div>
+  </div>
+
+  <div class="sep"><div class="sep-line"></div><span class="sep-label">Modalités pratiques</span><div class="sep-line"></div></div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">💬 Communication</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Canal principal : à définir avec Sihem (WhatsApp, email)</li>
+          <li>Délai de réponse : sous 24h en jours ouvrés</li>
+          <li>Validation des posts : J-2 avant publication</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-header-title">🔐 Accès & outils</span></div>
+      <div class="card-body">
+        <ul class="styled-list">
+          <li>Accès au compte Instagram (gestionnaire ou accès partagé)</li>
+          <li>Accès aux visuels existants (dossier Google Drive ou WeTransfer)</li>
+          <li>Outils : Canva, planificateur (Meta Business Suite ou Later)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. RÉSULTAT ATTENDU -->
+  <div class="section-divider">
+    <div class="section-num">07</div>
+    <div class="section-meta">
+      <div class="section-tag">Résultat attendu</div>
+      <div class="section-title">Ce que vous obtenez à l'issue de la mission</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="highlight">
+    <p>À la fin des deux semaines de collaboration, L'Instant Glow dispose d'un <strong>compte Instagram professionnel et cohérent</strong>, aligné sur l'image premium du salon. Sihem est formée et confiante pour prendre le relais. Elle dispose de tous les outils, templates et méthodes pour maintenir une présence Instagram régulière et efficace — sans dépendre d'une agence.</p>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.4rem;line-height:1.2">Profil<br>refait</div>
+      <div class="kpi-label">Bio, highlights,<br>identité visuelle</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.4rem;line-height:1.2">8–10<br>posts</div>
+      <div class="kpi-label">Créés, rédigés<br>et publiés</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kpi-num" style="font-size:1.4rem;line-height:1.2">100%<br>autonome</div>
+      <div class="kpi-label">Sihem formée<br>au 1er juin</div>
+    </div>
+  </div>
+
+  <!-- 8. PRIX -->
+  <div class="section-divider">
+    <div class="section-num">08</div>
+    <div class="section-meta">
+      <div class="section-tag">Investissement</div>
+      <div class="section-title">Tarifs & conditions</div>
+    </div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="pricing-card">
+    <div class="pricing-header">
+      <div class="pricing-tag">Tarif de lancement · Mission complète · Offre unique</div>
+      <div class="pricing-name">Pack Refonte Instagram + Formation</div>
+      <div class="pricing-sub">Mission sur 2 semaines · 2h/jour · 10 jours ouvrés · Démarrage dès validation</div>
+    </div>
+    <div class="pricing-amount">
+      <span class="pricing-currency">€</span>
+      <span class="pricing-num">195</span>
+      <span class="pricing-period">· forfait tout compris · tarif de lancement</span>
+    </div>
+    <div class="pricing-includes">
+      <div class="pricing-includes-title">Ce qui est inclus dans ce forfait</div>
+      <div class="pricing-item">Audit complet du compte + rapport de recommandations</div>
+      <div class="pricing-item">Refonte du profil (bio, highlights, identité visuelle)</div>
+      <div class="pricing-item">Kit de templates visuels réutilisables (alignés sur la charte)</div>
+      <div class="pricing-item">Ligne éditoriale + calendrier de contenu 2 semaines</div>
+      <div class="pricing-item">Création et publication de 8 à 10 posts (visuels + captions + hashtags)</div>
+      <div class="pricing-item">Stratégie hashtags personnalisée</div>
+      <div class="pricing-item">Session de formation complète (1h30) avec guide pratique écrit</div>
+      <div class="pricing-item">Disponibilité et échanges tout au long de la mission</div>
+    </div>
+    <div class="pricing-note">
+      ⚡ Non inclus dans ce forfait : création de contenu vidéo (Reels), gestion des stories, campagnes publicitaires payantes. Ces éléments peuvent faire l'objet d'une offre complémentaire sur demande.
+    </div>
+    <div class="pricing-footer">
+      <span class="pricing-badge">Tarif de lancement</span>
+      <span class="pricing-badge outline">Sans engagement long terme</span>
+      <span class="pricing-badge outline">Acompte 50% au démarrage</span>
+    </div>
+  </div>
+
+  <!-- Comparaison marché -->
+  <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:0.9rem;">
+    <div style="background:var(--ink);padding:0.65rem 1.4rem;">
+      <span style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:white;font-weight:600;">Pourquoi 195 € ? — Transparence sur le tarif</span>
+    </div>
+    <div style="padding:1.2rem 1.5rem;">
+      <p style="font-size:0.85rem;color:var(--ink-soft);line-height:1.75;font-weight:300;margin-bottom:1.2rem;">Ce tarif correspond à <strong>20 heures de travail effectif</strong> (2h/jour × 10 jours ouvrés), valorisées honnêtement dans le cadre d'une première collaboration. Voici comment il se situe par rapport au marché :</p>
+      <!-- Table -->
+      <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border);">
+            <th style="text-align:left;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Profil</th>
+            <th style="text-align:center;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Taux horaire</th>
+            <th style="text-align:right;padding:0.5rem 0.6rem;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted-light);font-weight:600;">Pour cette mission</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM débutant (1ère année)</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">25 – 35 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">500 – 700 €</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">CM intermédiaire</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">40 – 60 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">800 – 1 200 €</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:0.55rem 0.6rem;color:var(--muted);font-weight:300;">Agence</td>
+            <td style="padding:0.55rem 0.6rem;text-align:center;color:var(--muted);">70 – 120 €/h</td>
+            <td style="padding:0.55rem 0.6rem;text-align:right;color:var(--muted);">1 400 – 2 400 €</td>
+          </tr>
+          <tr style="background:var(--cherry-light);">
+            <td style="padding:0.65rem 0.6rem;color:var(--cherry);font-weight:700;">✦ Inès Ouajib — tarif de lancement</td>
+            <td style="padding:0.65rem 0.6rem;text-align:center;color:var(--cherry);font-weight:700;">9,75 €/h</td>
+            <td style="padding:0.65rem 0.6rem;text-align:right;color:var(--cherry);font-weight:700;">195 €</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.78rem;color:var(--muted);font-weight:300;line-height:1.65;margin-top:1rem;font-style:italic;">Ce tarif préférentiel est proposé dans le cadre d'une première collaboration. Il est amené à évoluer lors des prochaines missions, en cohérence avec le marché.</p>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Option prolongation :</strong> Si après le 1er juin, Sihem souhaite déléguer à nouveau la gestion Instagram ou étendre la collaboration à TikTok/Facebook, je reste disponible. Un devis spécifique sera établi selon les besoins à ce moment-là.</p>
+  </div>
+
+  <!-- ═══ TEMPLATE MAIL ═══ -->
+  <div style="margin: 4rem 0 2rem; text-align:center; position:relative;">
+    <div style="height:1px; background: var(--border); position:absolute; top:50%; left:0; right:0;"></div>
+    <span style="position:relative; background: var(--bg); padding: 0 1.5rem; font-size:0.62rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--cherry); font-weight:600;">Template d'envoi</span>
+  </div>
+
+  <div class="mail-template">
+    <div class="mail-header">
+      <div class="mail-field">
+        <span class="mail-field-label">Objet</span>
+        <span class="mail-field-value">Proposition commerciale — Refonte Instagram L'Instant Glow</span>
+      </div>
+      <div class="mail-field">
+        <span class="mail-field-label">Pour</span>
+        <span class="mail-field-value">Sihem &lt;email@linstantglow.fr&gt;</span>
+      </div>
+      <div class="mail-field">
+        <span class="mail-field-label">De</span>
+        <span class="mail-field-value">Inès Ouajib</span>
+      </div>
+    </div>
+    <div class="mail-body">
+      <p>Bonjour Sihem,</p>
+      <p>Vous trouverez en pièce jointe la proposition commerciale faisant suite à notre échange de ce jour.</p>
+      <p>Je vous laisse la consulter et revenir vers moi d'ici le <strong>25 mai</strong> avec votre validation ou vos éventuelles questions.</p>
+      <p>Une fois la proposition validée, je vous transmettrai le devis ainsi que le contrat pour signature, afin de pouvoir démarrer la collaboration autour du <strong>26–27 mai</strong>, comme convenu lors de l'appel.</p>
+      <p>Si vous avez besoin de précisions ou d'ajustements, je reste disponible.</p>
+      <p>À très vite,</p>
+      <div class="mail-sign">
+        Inès Ouajib<br>
+        <span style="font-weight:300;color:var(--muted);font-size:0.75rem;">Community Management · ines-ouajib.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div class="doc-footer-brand">
+      <strong>Inès Ouajib</strong> · Community Management<br>
+      <span>Proposition préparée le 18 mai 2026</span>
+    </div>
+    <div class="doc-footer-page">Document confidentiel</div>
+  </div>
+
+</div><!-- end doc-wrap -->
+
+</body>
+</html>
