@@ -607,57 +607,6 @@
     line-height: 1.4;
   }
 
-  /* ─── MAIL TEMPLATE ─── */
-  .mail-template {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    page-break-before: always;
-  }
-  .mail-header {
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 1.5rem;
-  }
-  .mail-field {
-    display: flex;
-    gap: 0.8rem;
-    align-items: baseline;
-    padding: 0.3rem 0;
-  }
-  .mail-field-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted-light);
-    font-weight: 600;
-    min-width: 50px;
-  }
-  .mail-field-value {
-    font-size: 0.82rem;
-    color: var(--ink);
-    font-weight: 400;
-  }
-  .mail-body {
-    padding: 1.5rem 1.8rem;
-    font-size: 0.86rem;
-    color: var(--ink-soft);
-    line-height: 1.8;
-    font-weight: 300;
-  }
-  .mail-body p { margin-bottom: 1rem; }
-  .mail-body p:last-child { margin-bottom: 0; }
-  .mail-sign {
-    border-top: 1px solid var(--border);
-    margin-top: 1rem;
-    padding-top: 1rem;
-    font-size: 0.78rem;
-    color: var(--cherry);
-    font-weight: 500;
-  }
-
   /* ─── FOOTER ─── */
   .doc-footer {
     margin-top: 4rem;
@@ -712,7 +661,6 @@
   <div class="cover-inner">
 
     <div class="cover-logo">
-      <!-- Replicating the "io" monogram from the brand -->
       <svg class="logo-mark" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text x="0" y="112" font-family="Georgia, serif" font-size="118" font-weight="bold" fill="#8B0435" letter-spacing="-6">io</text>
       </svg>
@@ -792,7 +740,7 @@
       <div class="section-line"></div>
     </div>
 
-    <div class="kpi-row">
+    <div class="kpi-row" style="grid-template-columns: repeat(4, 1fr);">
       <div class="kpi-box">
         <div class="kpi-num">799</div>
         <div class="kpi-label">Abonnés Instagram<br>au 18 mai 2026</div>
@@ -800,6 +748,10 @@
       <div class="kpi-box">
         <div class="kpi-num">24</div>
         <div class="kpi-label">Posts depuis le<br>26 octobre 2025</div>
+      </div>
+      <div class="kpi-box">
+        <div class="kpi-num">~3–4</div>
+        <div class="kpi-label">Posts publiés<br>par mois en moyenne</div>
       </div>
       <div class="kpi-box">
         <div class="kpi-num">∅</div>
@@ -818,7 +770,7 @@
           <li>Publications sans caption ni hashtags : visibilité organique nulle, aucune accroche pour l'audience</li>
           <li>Contenu répétitif : photos prises sous le même angle, pas de diversité de formats</li>
           <li>Absence de ligne éditoriale : les posts semblent publiés "au compte-gouttes" sans stratégie</li>
-          <li>Profil non optimisé : bio, lien, highlights non travaillés</li>
+          <li>Profil à retravailler : bio, lien, highlights à optimiser</li>
           <li>Potentiel inexploité : 799 abonnés avec des stories actives = une communauté existante à engager</li>
         </ul>
       </div>
@@ -907,7 +859,6 @@
        PROPOSITION COMMERCIALE
   ════════════════════════════════════════ -->
 
-  <!-- Section break visuelle -->
   <div style="margin: 4rem 0 3rem; text-align:center; position:relative;">
     <div style="height:1px; background: var(--border); position:absolute; top:50%; left:0; right:0;"></div>
     <span style="position:relative; background: var(--bg); padding: 0 1.5rem; font-size:0.62rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--cherry); font-weight:600;">Proposition Commerciale</span>
@@ -927,7 +878,7 @@
     <div class="card-body">
       <p>L'Instant Glow est un salon d'esthétique positionné sur un segment <strong>premium accessible</strong>, rayonnant sur le Pays de Gex, la Suisse romande et la Haute-Savoie. La marque dispose d'un vrai potentiel de visibilité en ligne : une clientèle féminine fidèle, une charte graphique existante, du contenu visuel professionnel disponible, et une gérante déjà active quotidiennement sur les stories.</p>
       <br>
-      <p>Pourtant, le compte Instagram (@linstantglow, 799 abonnés) ne reflète pas encore l'image soignée du salon. Les publications manquent de structure : pas de captions, pas de hashtags, angles répétitifs. Le potentiel est là — il manque la stratégie et l'exécution éditoriale pour le révéler.</p>
+      <p>Pourtant, le compte Instagram (@linstantglow, 799 abonnés) ne reflète pas encore l'image soignée du salon. Les publications manquent de structure : pas de captions, pas de hashtags, angles répétitifs, et une cadence irrégulière d'environ 3 à 4 posts par mois. Le potentiel est là — il manque la stratégie et l'exécution éditoriale pour le révéler.</p>
     </div>
   </div>
 
@@ -1046,7 +997,7 @@
         <li>Calendrier éditorial sur 2 semaines (planning de publication détaillé)</li>
         <li>8 à 10 posts créés, rédigés et validés avec Sihem</li>
         <li>Stratégie hashtags personnalisée (sets par thématique)</li>
-        <li>Session de formation (1h–1h30) : prise en main des outils, méthode de publication, lecture des stats</li>
+        <li>Session de formation (2h–2h30) : prise en main des outils, méthode de publication, lecture des stats</li>
         <li>Document récapitulatif de la formation (guide pratique pour Sihem)</li>
       </ul>
     </div>
@@ -1092,7 +1043,7 @@
       <div class="card-header"><span class="card-header-title">💬 Communication</span></div>
       <div class="card-body">
         <ul class="styled-list">
-          <li>Canal principal : à définir avec Sihem (WhatsApp, email)</li>
+          <li>Canaux principaux : WhatsApp, email</li>
           <li>Délai de réponse : sous 24h en jours ouvrés</li>
           <li>Validation des posts : J-2 avant publication</li>
         </ul>
@@ -1103,8 +1054,8 @@
       <div class="card-body">
         <ul class="styled-list">
           <li>Accès au compte Instagram (gestionnaire ou accès partagé)</li>
-          <li>Accès aux visuels existants (dossier Google Drive ou WeTransfer)</li>
-          <li>Outils : Canva, planificateur (Meta Business Suite ou Later)</li>
+          <li>Partage des visuels existants via Google Drive ou WeTransfer</li>
+          <li>Outils : Canva, CapCut, Notion, Meta Business Suite ou Later</li>
         </ul>
       </div>
     </div>
@@ -1168,11 +1119,12 @@
       <div class="pricing-item">Ligne éditoriale + calendrier de contenu 2 semaines</div>
       <div class="pricing-item">Création et publication de 8 à 10 posts (visuels + captions + hashtags)</div>
       <div class="pricing-item">Stratégie hashtags personnalisée</div>
-      <div class="pricing-item">Session de formation complète (1h30) avec guide pratique écrit</div>
+      <div class="pricing-item">Session de formation complète (2h–2h30) avec guide pratique écrit</div>
+      <div class="pricing-item">Rapport de performance fin de mission : analyse des indicateurs clés (taux d'engagement, portée, croissance) et bilan des deux semaines</div>
       <div class="pricing-item">Disponibilité et échanges tout au long de la mission</div>
     </div>
     <div class="pricing-note">
-      ⚡ Non inclus dans ce forfait : création de contenu vidéo (Reels), gestion des stories, campagnes publicitaires payantes. Ces éléments peuvent faire l'objet d'une offre complémentaire sur demande.
+      ⚡ Non inclus dans ce forfait : la prise de photos et vidéos (les ressources visuelles sont fournies par Sihem, comme convenu lors de l'appel), gestion des stories quotidiennes, campagnes publicitaires payantes. Ces éléments peuvent faire l'objet d'une offre complémentaire sur demande.
     </div>
     <div class="pricing-footer">
       <span class="pricing-badge">Tarif de lancement</span>
@@ -1188,7 +1140,6 @@
     </div>
     <div style="padding:1.2rem 1.5rem;">
       <p style="font-size:0.85rem;color:var(--ink-soft);line-height:1.75;font-weight:300;margin-bottom:1.2rem;">Ce tarif correspond à <strong>20 heures de travail effectif</strong> (2h/jour × 10 jours ouvrés), valorisées honnêtement dans le cadre d'une première collaboration. Voici comment il se situe par rapport au marché :</p>
-      <!-- Table -->
       <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
         <thead>
           <tr style="border-bottom:2px solid var(--border);">
@@ -1226,41 +1177,6 @@
 
   <div class="highlight">
     <p><strong>Option prolongation :</strong> Si après le 1er juin, Sihem souhaite déléguer à nouveau la gestion Instagram ou étendre la collaboration à TikTok/Facebook, je reste disponible. Un devis spécifique sera établi selon les besoins à ce moment-là.</p>
-  </div>
-
-  <!-- ═══ TEMPLATE MAIL ═══ -->
-  <div style="margin: 4rem 0 2rem; text-align:center; position:relative;">
-    <div style="height:1px; background: var(--border); position:absolute; top:50%; left:0; right:0;"></div>
-    <span style="position:relative; background: var(--bg); padding: 0 1.5rem; font-size:0.62rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--cherry); font-weight:600;">Template d'envoi</span>
-  </div>
-
-  <div class="mail-template">
-    <div class="mail-header">
-      <div class="mail-field">
-        <span class="mail-field-label">Objet</span>
-        <span class="mail-field-value">Proposition commerciale — Refonte Instagram L'Instant Glow</span>
-      </div>
-      <div class="mail-field">
-        <span class="mail-field-label">Pour</span>
-        <span class="mail-field-value">Sihem &lt;email@linstantglow.fr&gt;</span>
-      </div>
-      <div class="mail-field">
-        <span class="mail-field-label">De</span>
-        <span class="mail-field-value">Inès Ouajib</span>
-      </div>
-    </div>
-    <div class="mail-body">
-      <p>Bonjour Sihem,</p>
-      <p>Vous trouverez en pièce jointe la proposition commerciale faisant suite à notre échange de ce jour.</p>
-      <p>Je vous laisse la consulter et revenir vers moi d'ici le <strong>25 mai</strong> avec votre validation ou vos éventuelles questions.</p>
-      <p>Une fois la proposition validée, je vous transmettrai le devis ainsi que le contrat pour signature, afin de pouvoir démarrer la collaboration autour du <strong>26–27 mai</strong>, comme convenu lors de l'appel.</p>
-      <p>Si vous avez besoin de précisions ou d'ajustements, je reste disponible.</p>
-      <p>À très vite,</p>
-      <div class="mail-sign">
-        Inès Ouajib<br>
-        <span style="font-weight:300;color:var(--muted);font-size:0.75rem;">Community Management · ines-ouajib.com</span>
-      </div>
-    </div>
   </div>
 
   <!-- FOOTER -->
